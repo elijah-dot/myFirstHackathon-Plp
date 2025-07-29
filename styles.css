@@ -17,3 +17,16 @@
             color: var(--secondary);
             line-height: 1.6;
         }
+
+ header {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            border-bottom: 4px solid var(--accent);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
