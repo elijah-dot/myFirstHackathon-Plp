@@ -255,3 +255,108 @@ footer {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             }
         }
+
+          .contact-form {
+                            max-width: 400px;
+                            margin: 2rem auto 0 auto;
+                            background: #fff;
+                            padding: 2rem 2rem 1.5rem 2rem;
+                            border-radius: 12px;
+                            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+                        }
+                        .contact-form .form-group {
+                            margin-bottom: 1.2rem;
+                        }
+                        .contact-form .form-input,
+                        .contact-form .form-textarea {
+                            width: 100%;
+                            padding: 0.75rem 1rem;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 6px;
+                            font-size: 1rem;
+                            font-family: inherit;
+                            background: #f9f9f9;
+                            transition: border 0.2s;
+                            outline: none;
+                        }
+                        .contact-form .form-input:focus,
+                        .contact-form .form-textarea:focus {
+                            border-color: #007bff;
+                            background: #fff;
+                        }
+                        .contact-form .form-textarea {
+                            resize: vertical;
+                            min-height: 100px;
+                        }
+                        .contact-form .btn {
+                            width: 100%;
+                            margin-top: 0.5rem;
+                        }
+/* Interests Section Styling */
+    #interests {
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+        padding: 60px 0 50px 0;
+    }
+
+    .interests-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .interest-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(30, 41, 59, 0.08), 0 1.5px 6px rgba(30, 41, 59, 0.04);
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        text-align: center;
+        width: 230px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(30, 41, 59, 0.13), 0 3px 12px rgba(30, 41, 59, 0.07);
+    }
+
+    .interest-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        background: #f1f5f9;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(30, 41, 59, 0.07);
+        object-fit: cover;
+        display: block;
+    }
+
+    .interest-card h3 {
+        margin: 0.5rem 0 0.7rem 0;
+        font-size: 1.15rem;
+        color: #1e293b;
+        font-weight: 600;
+    }
+
+    .interest-card p {
+        color: #475569;
+        font-size: 0.98rem;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+        .interests-grid {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .interest-card {
+            width: 90%;
+            max-width: 350px;
+        }
+    }
